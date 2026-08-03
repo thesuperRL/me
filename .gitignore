@@ -1,0 +1,20 @@
+# Personal content — not for sharing
+# Folder skeletons (.gitkeep) are kept so the structure is visible
+
+Writing_Preferences.md
+Links.md
+
+Events/*.md
+Experiences/*.md
+
+Writtens/*.md
+Writtens/Old College Apps (2025)/
+# also catch any nested subdirectory content
+Writtens/**/*.md
+
+Resumes/*.md
+Resumes/*.pdf
+Resumes/images/
+
+Job Links/*.md
+Applications/*.md
