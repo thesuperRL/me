@@ -1,0 +1,217 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubheadingTwo}[3]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+       \space & \textit{\small #3} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectLinkHeading}[3]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+      \small#3 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSmallJob}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeAwardHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\newcommand{\resumeSubSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\startSubList}{\begin{itemize}[leftmargin=0.15in, label={\textendash}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Changrui (Ryan) Li} \\ \vspace{1pt}
+    \small (313) 699-1786 $|$ \href{mailto:changruili@cmu.edu}{\underline{changruili@cmu.edu}} $|$ \href{https://www.linkedin.com/in/ryan-li-ab139919b/}{\underline{LinkedIn}} $|$
+    \href{https://github.com/thesuperRL}{\underline{GitHub}} $|$
+    \href{https://codeberg.org/thesuperRL}{\underline{Codeberg}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+      \resumeSubheading
+              {\href{https://www.cmu.edu/}{\underline{Carnegie Mellon University}} }{Pittsburgh, PA}
+              {B.S. Computer Science (Machine Learning \& Security and Privacy concentrations), 3.89 QPA}{Present}
+              \resumeItemListStart
+                  \item{
+                    \textbf{Relevant Coursework:} Principles of Imperative Computation, Principles of Functional Programming, Introduction to Computer Systems, Great Ideas in Theoretical Computer Science
+                    }
+              \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------HONORS & AWARDS-----------
+\section{Honors \& Awards}
+  \resumeSubHeadingListStart
+    \resumeAwardHeading{\textbf{Dean's List High Honors}, Carnegie Mellon University}{Fall 2025, Spring 2026}
+    \resumeAwardHeading{\textbf{AIME Qualifier} (4x) $|$ \textbf{USACO Silver Division}}{2021 -- 2024}
+    \resumeAwardHeading{\textbf{NSDA Debate}: District Champion, State 3rd Place}{2025}
+    \resumeAwardHeading{\textbf{EPS Innovating Wisely Award} (4 of 80 graduates)}{Jun 2025}
+  \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Kotlin, Nix, Python, Rust, C\#, C++, TypeScript, HTML/CSS, SQL(PostgreSQL), \LaTeX, C, R} \\
+     \textbf{Frameworks}{: Flask, Bootstrap, Django, Material-UI, Node.js, React, LangGraph, PydanticAI, Android SDK} \\
+     \textbf{Developer Tools}{: Git, PyCharm, VSCode, IntelliJ, Visual Studio, AWS, Google Cloud Platform, Microsoft Azure} \\
+    }}
+ \end{itemize}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+    \resumeSubHeadingListStart
+        \resumeProjectLinkHeading
+              {\textbf{AI Developer and Data Scientist, MaxMyPoint and MaxFHR} $|$ Python, MCP Servers}{Dec 2024 -- Present}
+            {\href{https://maxmypoint.com/}{\textit{\underline{MaxMyPoint}: a website that helps travelers find and maximize hotel award redemptions.}}}
+              \resumeItemListStart
+                \resumeItem{Developing a LangGraph + PydanticAI + AWS AgentCore chatbot to assist over 56,000 users in effectively navigating the website and suggesting optimal travel plans.}
+                \resumeItem{Processing PostgreSQL data to track hotel alert success rates based on type, hotel, and time to offer accurate suggestions to users for alert creation, utilizing AI models to confirm coding robustness and suggest improvements.}
+                \resumeItem{Created the full stack of a map display system for hotels in \href{https://maxfhr.com/}{\underline{MaxFHR}}, designing caches to increase loading speed over multiple operations and gearing its frontend experience to optimize navigation and intuitiveness.}
+              \resumeItemListEnd
+
+        \resumeSmallJob
+        {\textbf{Research Assistant, CyLab} $|$ \emph{Kotlin, Android SDK, PostgresSQL}}{Oct 2025 - Present}
+          \resumeItemListStart
+            \resumeItem{Conducted full-stack design for an AI-powered scam warning application, assisting Dr. Lorrie Cranor by implementing experimental software for a large-scale study.}
+            \resumeItem{Implemented a secure module within an open-source SMS application to facilitate real-time scam detection.}
+            \resumeItem{Engineered a robust, encrypted transmission system for user data to be sent to a LLM-powered backend.}
+          \resumeItemListEnd
+
+        \resumeSmallJob
+          {\textbf{DevOps and Internal Tooling Tech Lead, ScottyLabs} $|$ Nix Language, Rust, TypeScript}{Sep 2025 -- Present}
+          \resumeItemListStart
+            \resumeItem{Using NixOS to host and grant various data modules to diverse projects throughout all of ScottyLabs}
+            \resumeItem{Maintaining a VM hosting websites and services for more than 3,000 users.}
+            \resumeItem{Responded immediately to VM crashes causing outages for 3,000+ users, restoring service and diagnosing root causes to prevent recurrence.}
+            \resumeItem{Leading a small team, distributing tasks among members to achieve maximal efficiency and application of skills, while interacting with all sectors of ScottyLabs to understand their needs.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+    \resumeProjectHeading
+          {\textbf{Bluetooth R\&D Intern, Google} $|$ \emph{C\#, C++, Android, Unity, Bluetooth}}{Jun 2024 - Sep 2024}
+          \resumeItemListStart
+            \resumeItem{Designed and implemented a Bluetooth Low Energy alternative to Google's Wi-Fi-based XDTK system, enabling Android devices to function as low-latency controllers for Unity applications under stricter bandwidth and reliability constraints, as well as in Wi-Fi-less situations.}
+            \resumeItem{Engineered a resilient packet streaming and reconstruction protocol to prevent loss and corruption, improving communication stability across varying BLE conditions.}
+            \resumeItem{Authored detailed technical documentation and system diagrams outlining design decisions, failure cases, and iterative refinements to support future research and development.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{EPSchedule Head Developer} $|$ \emph{Python, Flask, HTML/CSS, Javascript}}{Aug 2021 -- Jun 2025}
+          \resumeItemListStart
+            \resumeItem{Led maintenance and development of EPSchedule, a schedule display website used by the majority of the more than 600-person campus population.}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+\end{document}

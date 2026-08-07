@@ -1,0 +1,32 @@
+% experience-research.tex
+% Standalone "Research" section. Insert after or in place of experience.tex
+% for research-track and ML research applications.
+% Contains both CyLab projects (CUPS scam study + fraudulent website detection).
+\section{Research}
+    \resumeSubHeadingListStart
+
+        \resumeSmallJob
+              {\textbf{Research Assistant, CyLab — SMS Scam Warning Study} $|$ \emph{Kotlin, Android SDK, PostgreSQL}}{Oct 2025 -- Present}
+              \resumeItemListStart
+                \resumeItem{Sole developer on a large-scale user study under Prof. Lorrie Cranor (CUPS Lab) examining how users respond to AI-generated scam warnings in real SMS environments; second author on the resulting paper.}
+                \resumeItem{Modified an open-source SMS application to intercept messages from unknown senders, classify them via an LLM backend in real time, and surface warnings; engineered an encrypted channel for transmitting user interaction data to a PostgreSQL research backend.}
+                \resumeItem{Diagnosed a silent messaging regression caused by an upstream release quietly rolled back without a changelog entry; rebuilt all modifications on the correct fork instead of applying a surface-level patch, preserving study validity.}
+                \resumeItem{Study launched June 2026; data collection complete. Translating between research hypotheses and engineering constraints as the sole technical contributor with no senior developer above.}
+              \resumeItemListEnd
+
+        \resumeSmallJob
+              {\textbf{Research Assistant, CyLab — Fraudulent Website Detection} $|$ \emph{Python}}{Jul 2026 -- Present}
+              \resumeItemListStart
+                \resumeItem{Labeling and conducting machine learning work on datasets for fraudulent website detection models.}
+                \resumeItem{Optimized annotation throughput using HCI intuition: designed hotkey schemes and UI interaction patterns to increase labeling speed for self and others across the team.}
+              \resumeItemListEnd
+
+        \resumeSmallJob
+              {\textbf{Independent Research — Generative AI in 3D Applications} $|$ \emph{Literature Review}}{Mar 2024 -- Jun 2024}
+              \resumeItemListStart
+                \resumeItem{Authored a literature review on Generative AI in 3D applications, examining approximately 40 papers over three months and tracing research chains across NeRFs, diffusion-based 3D generation, and related methods.}
+                \resumeItem{Identified that no comprehensive survey of this area existed at time of writing; the review was self-initiated as an independent study at Eastside Preparatory School.}
+                \resumeItem{Presented findings to Microsoft 3D AI researchers and received substantive praise; work directly preceded Google Bluetooth R\&D internship the following summer.}
+              \resumeItemListEnd
+
+    \resumeSubHeadingListEnd

@@ -1,0 +1,18 @@
+# Roblox - Summer 2027 Software Engineer Intern
+
+## Prompt
+Please provide a summary highlighting your top two exceptional academic and/or professional accomplishments. Ideally, the examples you share will be a reflection of your most highly technical accomplishments and demonstrate why you are a top candidate for SpaceX.
+
+## Response
+
+During the summer of 2024, I interned on Google's Bluetooth R&D team with one task: add Bluetooth as an alternative connectivity layer to XDTK, an internal system that lets Android phones act as real-time controllers in Unity applications by transmitting rotation, acceleration, and touch data as input. Wi-Fi worked fine in the lab, but the point of the project was to make the system work everywhere else, including environments without Wi-Fi or where the existing setup introduced latency through manual IP configuration. Bluetooth Low Energy seemed like the natural answer until I looked closely at what BLE actually offered, which was strict packet size limits, no reliability guarantees, and silent drops under interference, none of which are compatible with real-time control.
+
+I designed a custom communication stack in C# and C++, bridging the Android client and the Unity host, and the core challenge I had to solve was packet integrity, since BLE fragments payloads and drops them without notifying the receiver. I built a streaming and reconstruction protocol that detected fragmentation, identified loss, and reassembled the original payload on the receiving end without requiring retransmission in the common case, which mattered because retransmission would have reintroduced exactly the latency I was trying to eliminate. The final system ran reliably across multiple Android devices under varying interference conditions, extended XDTK's usable range from Wi-Fi-only environments to anywhere a Bluetooth signal could reach, and removed the manual IP entry step that had made setup cumbersome.
+
+What that project taught me is that reliability under constraint is fundamentally a design problem, and that the protocol decisions I made in the first week, before I had written much code at all, were the ones that determined whether the system would hold up when it actually ran.
+
+Since December 2024, I have been the lead AI developer at MaxMyPoint, a platform used by over 56,000 travelers to find and optimize hotel point redemptions, where my main project has been building an agentic chatbot using LangGraph, PydanticAI, and AWS AgentCore that helps users navigate the site and plan trips based on their reward accounts and travel goals. The chatbot runs in production with live user data, which means the design decisions I made about its scope and behavior are not theoretical.
+
+The hardest part was not the technical stack itself but defining what the chatbot was permitted to know and say, because while LangGraph handles the workflow, PydanticAI enforces structured outputs, and AgentCore provides the agent infrastructure, none of that answers the question of how you constrain a non-deterministic system that 56,000 people are relying on for real financial and travel decisions. Alongside building the chatbot, I built a data pipeline over our PostgreSQL database that tracked hotel alert success rates broken down by type, hotel, and timeframe, feeding that signal back into the chatbot's recommendations so that its suggestions became more accurate as more data accumulated.
+
+At that scale, the difference between code that works in testing and code that holds in production becomes visible quickly, and crossing that gap is something I find myself thinking about more carefully every time I ship something new.
