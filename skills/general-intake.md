@@ -49,6 +49,7 @@ If they give a clean answer, ask one follow-up: "Can you give me a specific exam
 
 - What do you keep coming back to across your projects and roles — the theme underneath the resume?
 - What do you care about that doesn't show up on paper?
+  - If Ryan mentions a specific project by name, read the corresponding file in `Repo Indexing/` before following up — commit history and design decisions give better grounding than memory. Mapping: `XDTK-Google-BLE.md` → Google BLE internship; `ScottyLabs-Infrastructure-NixOS.md` / `ScottyLabs-Governance.md` / `ScottyLabs-Apps.md` / `mautrix-bridges.md` → ScottyLabs DevOps roles; `aayn-replication.md`, `masked-autoencoders.md`, `gaussian-splatting.md`, `nwtsuf-replication.md`, `universal-llm-attacks.md` → ML paper replications; `UAV-Gesture-Recognization.md` → Winter IP drone project; `commit-generator.md` → git-aicommit Rust CLI; `arknights-website.md` → Arknights teambuilding tool; `TartanHacks-2026.md` / `HackCMU-2025.md` → hackathons; `academic-misc.md` → course/school projects. Full mapping lives in `writing-assistant.md` and `resume-builder` skill.
 
 ### 6. Voice Notes (2-3 questions)
 

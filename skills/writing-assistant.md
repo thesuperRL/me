@@ -26,13 +26,42 @@ State both back to Ryan and ask: "Confirm and I'll write." Wait for confirmation
 ---
 
 ## Step 2 - Load Context
-
 Read all of the following in parallel before drafting:
 
 1. `Writing_Preferences.md` (repo root) - Ryan's voice, structure rules, what to avoid
 2. **At least 3 of Ryan's actual writings** from `Writtens/` to calibrate tone. His writing is in: REUSE.md, Datacurve.md, Two Sigma.md, YC Talk.md, Old College Apps (2025)/CMU_Application_2025.md. **Do NOT use `Writtens/Citadel.md` - it is not his writing.** Read these before drafting every time, even if you have seen them before in this session. The goal is to actively re-index his sentence rhythm, word choice, and structure.
 3. Any relevant resume section files in `Resumes/sections/` for factual grounding on the role
+4. **For any project or technical role referenced in the essay, read the corresponding file in `Repo Indexing/`** — these contain commit-level specifics, accurate contribution framing, design decisions, and technical depth that must ground any claims made. Use the mapping below to find the right file.
 
+### Repo Indexing — Filename to Project/Role Mapping
+
+| File | Project / Resume Section |
+|------|--------------------------|
+| `XDTK-Google-BLE.md` | Bluetooth R&D Intern, Google (`projects.tex`) |
+| `ScottyLabs-Infrastructure-NixOS.md` | DevOps and Internal Tooling Tech Lead, ScottyLabs — infrastructure, dalmatian, devops-config (`experience.tex`) |
+| `ScottyLabs-Governance.md` | DevOps and Internal Tooling Tech Lead, ScottyLabs — governance, documentation, discord-verify (`experience.tex`) |
+| `ScottyLabs-Apps.md` | DevOps and Internal Tooling Tech Lead, ScottyLabs — Snipe-Elo-Bots, tartan-vote, cmugpt-surface/agent, kennel, housing, bus-sign, scottylol (`experience.tex`) |
+| `mautrix-bridges.md` | DevOps and Internal Tooling Tech Lead, ScottyLabs — mautrix-go/discord/slack patch maintenance (`experience.tex`) |
+| `ScottyLabs-Codeberg-delta.md` | DevOps and Internal Tooling Tech Lead, ScottyLabs — org-observability, terraform-provider-matrix, devops-troubleshooting-docs (Codeberg-only) |
+| `terraform-provider-synapse.md` | DevOps and Internal Tooling Tech Lead, ScottyLabs — OpenTofu Synapse provider (Codeberg) |
+| `aayn-replication.md` | ML Paper Replications — Attention is All You Need (`projects.tex`, commented) |
+| `masked-autoencoders.md` | ML Paper Replications — Masked Autoencoders (`projects.tex`, commented) |
+| `gaussian-splatting.md` | ML Paper Replications — 2D Gaussian Splatting (`projects.tex`, commented) |
+| `nwtsuf-replication.md` | ML Paper Replications — Indirect Prompt Injection (`projects.tex`, commented) |
+| `universal-llm-attacks.md` | ML Paper Replications — GCG Adversarial Suffix Attack (`projects.tex`, commented) |
+| `UAV-Gesture-Recognization.md` | Winter Independent Project — hand-gesture UAV GCS (`experience-research.tex`) |
+| `commit-generator.md` | git-aicommit — Rust CLI (`projects.tex`, commented) |
+| `arknights-website.md` | Arknights Teambuilding Tool (`projects-personal.tex`) |
+| `arknights-pfp-dataset.md` | Personal project — Arknights PFP dataset (not in resume sections) |
+| `credit-conserver.md` | Personal project — credit optimization tool (not in resume sections) |
+| `issues-mcp.md` | Personal project — MCP server (not in resume sections) |
+| `TartanHacks-2026.md` | TartanHacks 2026 hackathon (not in resume sections) |
+| `HackCMU-2025.md` | HackCMU 2025 hackathon (not in resume sections) |
+| `website-personal.md` | Personal website — thesuperRL.github.io + website repo |
+| `website-codeberg.md` | Personal website — TypeScript version on Codeberg |
+| `Webscrape-Researcher-PF.md` | Webscrape Researcher for PF debate (HS project, not in resume sections) |
+| `Reinforced-Riichi-Player.md` | Reinforced Riichi mahjong player (personal project, not in resume sections) |
+| `academic-misc.md` | 05-180 Bakeoff, Datasci Final, GFG-Unity, BWSI2, Time-converter, USA-Map, quik-task |
 ---
 
 ## Step 3 - Draft

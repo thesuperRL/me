@@ -1,12 +1,26 @@
 \section{Projects}
     \resumeSubHeadingListStart
     \resumeProjectHeading
-          {\textbf{Bluetooth R\&D Intern, Google} $|$ \emph{C\#, C++, Android, Unity, Bluetooth}}{Jun 2024 - Sep 2024}
+          {\textbf{Bluetooth R\&D Intern, Google} $|$ \emph{Java, C\#, .NET, Android, Unity, Bluetooth}}{Jun 2024 - Sep 2024}
           \resumeItemListStart
-            \resumeItem{Designed and implemented a Bluetooth Low Energy alternative to Google's Wi-Fi-based XDTK system, enabling Android devices to function as low-latency controllers for Unity applications under stricter bandwidth and reliability constraints, as well as in Wi-Fi-less situations.}
-            \resumeItem{Engineered a resilient packet streaming and reconstruction protocol to prevent loss and corruption, improving communication stability across varying BLE conditions.}
-            \resumeItem{Authored detailed technical documentation and system diagrams outlining design decisions, failure cases, and iterative refinements to support future research and development.}
+            \resumeItem{Extended Google's open-source XDTK toolkit with a Bluetooth Classic (RFCOMM/SPP) transport after a month-long attempt to use BLE proved infeasible: Windows/Unity could discover BLE devices but could not trigger characteristic subscription notifications across any tested library (BleWinrtDll, 32feet BLE, custom WinRT DLL). The Classic implementation enables Android devices to stream IMU, touch, and ARCore sensor data to Unity without Wi-Fi.}
+            \resumeItem{Engineered a custom packet protocol with a HEARTBEAT ACK flow-control loop (after discovering a hard \textasciitilde8-packet synchronous send limit in RFCOMM) and half-packet stitching to handle RFCOMM boundary fragmentation.}
+            \resumeItem{Built a .NET Framework DLL (XDTK32Feet) wrapping 32feet.NET's Bluetooth picker so Unity's Mono runtime could invoke the native Windows device chooser; implemented multi-device support with one background-threaded BluetoothAgent per phone, keyed by MAC address with prefab reuse on reconnect.}
+            % \resumeItem{Authored detailed technical documentation and system diagrams outlining design decisions, failure cases, and iterative refinements to support future research and development.}
           \resumeItemListEnd
+
+      % \resumeProjectHeading
+      %     {\textbf{git-aicommit} $|$ \emph{Rust} $|$ \href{https://github.com/thesuperRL/commit-generator}{\underline{GitHub}}}{Jun 2026}
+      %     \resumeItemListStart
+      %       \resumeItem{Rust CLI tool (\texttt{git aicommit}) that assembles staged diff, file contents, and repo context into a prompt, calls a free LLM (OpenRouter/Gemini), validates the response against format rules, and opens the result in your editor before committing.}
+      %       \resumeItem{Implements fallback model rotation: on rate-limit (429), fetches the OpenRouter free-model list and cycles through smaller models; supports \texttt{--retry-forever}, \texttt{--fast}, \texttt{--dry-run}, and a \texttt{--context} flag for continuity across related commits.}
+      %     \resumeItemListEnd
+
+      % \resumeProjectHeading
+      %     {\textbf{ML Paper Replications} $|$ \emph{Python, PyTorch}}{2026}
+      %     \resumeItemListStart
+      %       \resumeItem{Hand-implemented Transformer encoder-decoder (Attention is All You Need) trained on Multi30k EN$\rightarrow$DE; Masked Autoencoder (MAE) with custom Arknights dataset and committed checkpoint; 2D Gaussian Splatting in pure PyTorch with animated per-character output; GCG adversarial suffix attack (Zou et al.) against Vicuna-7B; indirect prompt injection demo (Greshake et al.) using MCP + Ollama with five live attack scenarios.}
+      %     \resumeItemListEnd
     
      % \resumeSmallJob
      %      {\textbf{\href{https://thesuperrl.github.io/arknights-website}{\underline{Arknights Teambuilding Website}}} $|$ TypeScript, Node, SQL, Vite, Railway}{Dec 2025 -- Present}

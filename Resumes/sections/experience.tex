@@ -26,19 +26,17 @@
         \resumeSmallJob
           {\textbf{DevOps and Internal Tooling Tech Lead, ScottyLabs} $|$ Nix Language, Rust, TypeScript}{Sep 2025 -- Present}
           \resumeItemListStart
-            \resumeItem{Using NixOS to host and grant various data modules to diverse projects throughout all of ScottyLabs}
-            \resumeItem{Building various internal applications to improve internal communications and organizational observability, including state-of-the-art AI monitors}
-            \resumeItem{Maintaining a VM hosting websites and services for more than 3,000 users.}
-            \resumeItem{Leading a small team, distributing tasks among members to achieve maximal efficiency and application of skills, while interacting with all sectors of ScottyLabs to understand their needs.}
+            \resumeItem{Deployed and maintained a Synapse Matrix homeserver with custom-patched mautrix-discord and mautrix-slack bridges, enabling bidirectional real-time mirroring of messages, reactions, pings, and avatars across Slack, Discord, and Matrix for the entire organization.}
+            \resumeItem{Standardized NixOS deployment tooling across 8+ ScottyLabs projects using devenv, secretspec, and Kennel, providing reproducible builds, branch-based preview environments, and unified secret management via OpenBao Vault.}
+            \resumeItem{Built docs.scottylabs.org from scratch: a multi-repo documentation hub aggregating all ScottyLabs project docs with full-text search, Accept: text/markdown content negotiation for LLM/AI consumers, and automated CI rebuild on any repo change.}
+            \resumeItem{Contributed to the governance automation system (TOML-based, OpenTofu/Atlantis) that enforces team membership, repo permissions, Keycloak OIDC client registration, and Slack/Discord role sync from a single source of truth across 6 platforms.}
+            % \resumeItem{Wrote a Terraform/OpenTofu provider extension for the Synapse Admin API (Go) to automate Matrix/Slack channel bridge linking — idempotent, checks live bridge state before issuing any bot commands.}
+            % \resumeItem{Built Snipe-Elo-Bots (sole developer): a Slack/Discord ELO rating system with leaderboard, duels, bounties, graph visualization, and CSV export, across 77 commits.}
             % \resumeItem{Conducted a large-scale migration of the majority of past ScottyLabs systems to more secure and optimized alternatives, reducing technical debt across all hosted services.}
             % \resumeItem{Responded immediately to VM crashes causing outages for 3,000+ users, restoring service and diagnosing root causes to prevent recurrence.}
-            % \resumeItem{Developing docs.scottylabs.org to close a documentation gap slowing onboarding and team autonomy across all projects.}
-            % \resumeItem{Improving succession and communication with new initiatives and projects that bridge Slack and Discord venues.}
             % \resumeItem{Built a project board for internal issue tracking and a ticket board for external requests by urgency, reducing task-assignment ambiguity and creating durable accountability without repeated escalation.}
             % \resumeItem{Negotiated formal team-lead authority over task coordination with the Director of Tech, securing agreement that all devops organization flows through Ryan.}
             % \resumeItem{Led structured 3x/week knowledge-transfer calls with the original stack author to close inherited documentation gaps and take independent ownership of infrastructure design decisions.}
-            % \resumeItem{Led a cross-functional meeting with the design team on day one of new directors to re-establish tech-design collaboration named as a priority in Ryan's Director of Tech platform.}
-          \resumeItemListEnd
     \resumeSubHeadingListEnd
 
         % --- CyLab FakeDocs (update after scraping work begins Thu Aug 7) ---

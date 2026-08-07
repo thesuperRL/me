@@ -15,6 +15,32 @@ You describe a real event. The agent's job is to interview you until it has full
 
 This also serves as a learning conversation. Don't just extract facts — help you articulate what you actually understand. Hold back analysis until you have gotten there yourself.
 
+**When an event involves a project or technical role:** before or during Phase 1, read the corresponding file in `Repo Indexing/` to ground your questions in the actual commit history, design decisions, and contribution scope. See the filename-to-project mapping:
+
+| File | Project / Role |
+|------|----------------|
+| `XDTK-Google-BLE.md` | Bluetooth R&D Intern, Google |
+| `ScottyLabs-Infrastructure-NixOS.md` | ScottyLabs DevOps — infrastructure, dalmatian |
+| `ScottyLabs-Governance.md` | ScottyLabs DevOps — governance, documentation, discord-verify |
+| `ScottyLabs-Apps.md` | ScottyLabs DevOps — Snipe-Elo-Bots, tartan-vote, cmugpt-surface/agent, kennel, housing, bus-sign |
+| `mautrix-bridges.md` | ScottyLabs DevOps — mautrix bridge patch maintenance |
+| `terraform-provider-synapse.md` | ScottyLabs DevOps — OpenTofu Synapse provider |
+| `ScottyLabs-Codeberg-delta.md` | ScottyLabs DevOps — Codeberg-only repos |
+| `aayn-replication.md` | ML Replications — Attention is All You Need |
+| `masked-autoencoders.md` | ML Replications — Masked Autoencoders |
+| `gaussian-splatting.md` | ML Replications — 2D Gaussian Splatting |
+| `nwtsuf-replication.md` | ML Replications — Indirect Prompt Injection |
+| `universal-llm-attacks.md` | ML Replications — GCG Adversarial Suffix Attack |
+| `UAV-Gesture-Recognization.md` | Winter Independent Project — hand-gesture UAV GCS |
+| `commit-generator.md` | git-aicommit Rust CLI |
+| `arknights-website.md` | Arknights Teambuilding Tool |
+| `credit-conserver.md` | Credit conservation tool |
+| `TartanHacks-2026.md` | TartanHacks 2026 |
+| `HackCMU-2025.md` | HackCMU 2025 |
+| `Webscrape-Researcher-PF.md` | PF Debate web scraper |
+| `Reinforced-Riichi-Player.md` | Reinforced Riichi mahjong player |
+| `academic-misc.md` | 05-180 Bakeoff, Datasci Final, GFG-Unity, BWSI2 |
+
 ---
 
 ## Interview Protocol
