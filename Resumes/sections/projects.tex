@@ -1,51 +1,51 @@
 \section{Projects}
     \resumeSubHeadingListStart
     \resumeProjectHeading
-          {\textbf{Bluetooth R\&D Intern, Google} $|$ \emph{Java, C\#, .NET, Android, Unity, Bluetooth}}{Jun 2024 - Sep 2024}
+          {\textbf{Bluetooth R\&D Intern, Google} $|$ \emph{Java, C\#, .NET, Android, Unity, Bluetooth} $|$ \href{https://github.com/thesuperRL/xdtk}{\underline{Android}}, \href{https://github.com/thesuperRL/XDTK-Unity-Side}{\underline{Unity}}, \href{https://github.com/thesuperRL/XDTK32Feet}{\underline{.NET DLL}}}{Jun 2024 - Sep 2024}
           \resumeItemListStart
-            \resumeItem{Extended Google's open-source XDTK toolkit with a Bluetooth Classic (RFCOMM/SPP) transport after a month-long attempt to use BLE proved infeasible: Windows/Unity could discover BLE devices but could not trigger characteristic subscription notifications across any tested library (BleWinrtDll, 32feet BLE, custom WinRT DLL). The Classic implementation enables Android devices to stream IMU, touch, and ARCore sensor data to Unity without Wi-Fi.}
-            \resumeItem{Engineered a custom packet protocol with a HEARTBEAT ACK flow-control loop (after discovering a hard \textasciitilde8-packet synchronous send limit in RFCOMM) and half-packet stitching to handle RFCOMM boundary fragmentation.}
-            \resumeItem{Built a .NET Framework DLL (XDTK32Feet) wrapping 32feet.NET's Bluetooth picker so Unity's Mono runtime could invoke the native Windows device chooser; implemented multi-device support with one background-threaded BluetoothAgent per phone, keyed by MAC address with prefab reuse on reconnect.}
+            \resumeItem{Extended Google's open-source \href{https://github.com/google/xdtk}{\underline{XDTK}} toolkit with a Bluetooth transport layer enabling Android devices to stream real-time sensor data to Unity applications without Wi-Fi.}
+            \resumeItem{Designed a custom packet protocol with flow control and boundary reassembly to achieve reliable high-frequency sensor streaming over Bluetooth.}
+            \resumeItem{Built a native Windows Bluetooth library (\href{https://github.com/thesuperRL/XDTK32Feet}{\underline{XDTK32Feet}}) enabling Unity to discover and manage multiple simultaneous device connections with stable reconnection handling per device.}
             % \resumeItem{Authored detailed technical documentation and system diagrams outlining design decisions, failure cases, and iterative refinements to support future research and development.}
           \resumeItemListEnd
 
       % \resumeProjectHeading
       %     {\textbf{git-aicommit} $|$ \emph{Rust} $|$ \href{https://github.com/thesuperRL/commit-generator}{\underline{GitHub}}}{Jun 2026}
       %     \resumeItemListStart
-      %       \resumeItem{Rust CLI tool (\texttt{git aicommit}) that assembles staged diff, file contents, and repo context into a prompt, calls a free LLM (OpenRouter/Gemini), validates the response against format rules, and opens the result in your editor before committing.}
-      %       \resumeItem{Implements fallback model rotation: on rate-limit (429), fetches the OpenRouter free-model list and cycles through smaller models; supports \texttt{--retry-forever}, \texttt{--fast}, \texttt{--dry-run}, and a \texttt{--context} flag for continuity across related commits.}
+      %       \resumeItem{CLI tool (\texttt{git aicommit}) that generates a commit message from staged diffs and repository context, validates the output format, and opens the result in your editor before committing.}
+      %       \resumeItem{Supports automatic fallback to alternative models on rate limits, with options for dry-run preview and contextual continuity across related commits.}
       %     \resumeItemListEnd
 
       % \resumeProjectHeading
-      %     {\textbf{ML Paper Replications} $|$ \emph{Python, PyTorch}}{2026}
+      %     {\textbf{ML Paper Replications} $|$ \emph{Python, PyTorch} $|$ \href{https://github.com/thesuperRL/aayn-replication}{\underline{AAYN}}, \href{https://github.com/thesuperRL/masked-autoencoders}{\underline{MAE}}, \href{https://github.com/thesuperRL/gaussian-splatting}{\underline{2DGS}}, \href{https://github.com/thesuperRL/universal-llm-attacks}{\underline{GCG}}, \href{https://github.com/thesuperRL/nwtsuf-replication}{\underline{NWTSUF}}}{2026}
       %     \resumeItemListStart
-      %       \resumeItem{Hand-implemented Transformer encoder-decoder (Attention is All You Need) trained on Multi30k EN$\rightarrow$DE; Masked Autoencoder (MAE) with custom Arknights dataset and committed checkpoint; 2D Gaussian Splatting in pure PyTorch with animated per-character output; GCG adversarial suffix attack (Zou et al.) against Vicuna-7B; indirect prompt injection demo (Greshake et al.) using MCP + Ollama with five live attack scenarios.}
+      %       \resumeItem{Replicated 5 ML papers from scratch spanning transformer architectures, self-supervised learning, 3D rendering, and adversarial attacks on aligned language models.}
       %     \resumeItemListEnd
     
      % \resumeSmallJob
      %      {\textbf{\href{https://thesuperrl.github.io/arknights-website}{\underline{Arknights Teambuilding Website}}} $|$ TypeScript, Node, SQL, Vite, Railway}{Dec 2025 -- Present}
           % \resumeItemListStart
-          %   \resumeItem{Creating a website that aims to give new players straightforward and personalized advice, whether in normal gameplay or specialized endgame gamemodes}
-          %   \resumeItem{Wrote an algorithm to assemble a personalized 12-character team that covers all niches from more than 400 possible characters based on user ownership}
+          %   \resumeItem{Built a website providing new players with personalized advice for both normal gameplay and specialized endgame modes.}
+          %   \resumeItem{Wrote an algorithm to assemble a personalized 12-character team covering all roles from more than 400 possible characters based on player ownership.}
           % \resumeItemListEnd
           
       % \resumeProjectHeading
       %     {\textbf{EPSchedule Head Developer} $|$ \emph{Python, Flask, HTML/CSS, Javascript}}{Aug 2021 -- Jun 2025}
       %     \resumeItemListStart
-      %       \resumeItem{Led maintenance and development of EPSchedule, a schedule display website used by the majority of the more than 600--people campus population.}
+      %       \resumeItem{Led maintenance and development of EPSchedule, a schedule display website used daily by the majority of a 600-person campus.}
       %     \resumeItemListEnd
 
       % \resumeProjectHeading
       %     {\textbf{Time Stop Tower Defense} $|$ \emph{Unity, C\#, Blender} $|$ CMU Game Creation Society}{2025 -- Present}
       %     \resumeItemListStart
-      %       \resumeItem{Programmer and lead 3D modeler for a tower defense game developed through CMU's Game Creation Society; releasing on Steam Early Access.}
+      %       \resumeItem{Programmer and lead 3D modeler for a tower defense game developed through CMU's Game Creation Society, set to release on Steam Early Access.}
       %       % TODO: add specifics on gameplay systems or 3D contributions once shipped
       %     \resumeItemListEnd
 
       % \resumeProjectHeading
       %     {\textbf{Hunt the Wumpus} $|$ \emph{C\#, Unity, Blender}}{Nov 2021 -- Jun 2024}
       %     \resumeItemListStart
-      %       \resumeItem{Lead programmer and 3D designer across two competition cycles in a local Seattle game design competition (30+ teams); placed 1st (2021--22) and 3rd with Audience's Choice Award (2023--24).}
-      %       \resumeItem{Built the only 3D entry in the 2023--24 competition: a first-person roguelike ability shooter with fully custom assets. GitHub: \href{https://github.com/angadjosan/Copal}{\underline{Copal}}.}
+      %       \resumeItem{Lead programmer and 3D designer across two cycles of a 30+ team Seattle game design competition, placing 1st in 2021--22 and 3rd with Audience's Choice Award in 2023--24.}
+      %       \resumeItem{Built the only 3D entry in the 2023--24 competition: a first-person roguelike ability shooter with fully custom assets, published as \href{https://github.com/angadjosan/Copal}{\underline{Copal}}.}
       %     \resumeItemListEnd
     \resumeSubHeadingListEnd
