@@ -1,5 +1,6 @@
-https://www.linkedin.com/in/ryan-li-ab139919b/
+# Links
 
-https://github.com/thesuperRL
+Quick-access links relevant to your current job search or application cycle.
 
-https://codeberg.org/thesuperRL
+- [Company Name](https://careers.company.com/...)
+- [Application portal](https://...)

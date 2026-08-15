@@ -1,21 +1,37 @@
-# Personal content — not for sharing
-# Folder skeletons (.gitkeep) are kept so the structure is visible
+# Personal content -- keep local or on your fork, not on the shared main repo.
+# Config stubs (General.md, Personal.md, Writing_Preferences.md, etc.) are tracked
+# as templates; fill them in on your fork.
 
-# Writing_Preferences.md
-# Links.md
-# Personal.md
+# Events (personal notes -- accumulate per-event files here)
+Events/[0-9]*.md
 
-# Events/*.md
-# Experiences/*.md
+# Experiences (role-linked personal notes)
+Experiences/*.md
+!Experiences/.gitkeep
 
-# Writtens/*.md
-# Writtens/Old College Apps (2025)/
-# # also catch any nested subdirectory content
-# Writtens/**/*.md
+# Written essays and drafts
+Writtens/*.md
+Writtens/**/*.md
+!Writtens/.gitkeep
+!Writtens/Generated/.gitkeep
+!Writtens/Old College Apps/.gitkeep
 
-# Resumes/*.md
-# Resumes/*.pdf
-# Resumes/images/
+# Generated resumes
+Resumes/Generated/*.tex
+Resumes/Generated/*.pdf
+!Resumes/Generated/.gitkeep
+Resumes/images/
+Resumes/*.pdf
 
-# Job Links/*.md
-# Applications/*.md
+# Applications and job links (personal cycle tracking)
+Applications/*.md
+!Applications/.gitkeep
+Job Links/*.md
+!Job Links/.gitkeep
+
+# Academics large files
+Academics/all-schedules.txt
+
+# Repo Indexing personal project files (not the README)
+Repo Indexing/*.md
+!Repo Indexing/README.md
